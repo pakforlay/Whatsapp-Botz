@@ -26,7 +26,7 @@ Clone this project
 
 ```bash
 > git clone https://github.com/pakforlay/whatsapp-botz.git
-> cd whatsapp-bot
+> cd whatsapp-botz
 ```
 
 Install the dependencies:
@@ -55,7 +55,7 @@ after running it you need to scan the qr
 - Change all apiKey on [this section](https://github.com/pakforlay/whatsapp-botz/blob/master/settings/api.json)
 - Get Api NoBackground on [this website](https://www.remove.bg/)
 - Get Api ScreenShot on [this website](https://apiflash.com/)
-- Get Api Simi-simi on [this website](https://workshop.simsimi.com/en/), masih limit api simi-siminya? [cek ini](https://github.com/pakforlay/whatsapp-bot/issues/38#issuecomment-726981060)
+- Get Api Simi-simi on [this website](https://workshop.simsimi.com/en/), masih limit api simi-siminya? [cek ini](https://github.com/pakforlay/whatsapp-botz/issues/38#issuecomment-726981060)
 
 ---
 
