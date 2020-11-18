@@ -14,11 +14,12 @@ THANKS BANG ARUGAZ ATAS API NYA, DALAM WAKTU SINGKAT INSHAALLAH API SAYA SENDIRI
 <p align="center"><a href="https://yaelahdo.herokuapp.com/" target="_blank">API PakForlay</a>.</p>
 </div>
 
-## 14/11/2020
-## UPDATE TIKTOK DOWNLOADER TANPA WATERMARK
+## NOMOR WHATSAPP BOT
++6285864456465
+
+## CHANGE LOG AT BOTTOM
 
 ## Getting Started
-
 This project require NodeJS v12.
 
 ### Install
@@ -181,3 +182,13 @@ Fix Stuck on linux, install google chrome stable:
 - [MhankBarBar](https://github.com/MhankBarBar/whatsapp-bot)
 - [dandyraka](https://github.com/dandyraka/NoBadWord)
 - [ArugaZ](https://github.com/ArugaZ/)
+
+## 18/11/2020
+
+Fix API Tiktok dan Youtube
+Fix ERROR
+Fix Typo
+
+## 14/11/2020
+
+UPDATE TIKTOK DOWNLOADER TANPA WATERMARK
