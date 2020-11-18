@@ -492,7 +492,7 @@ module.exports = HandleMsg = async (pakforlay, message) => {
             if (args.length == 0) return pakforlay.reply(from, `Untuk mendownload video youtube\nketik: ${prefix}ytvid [link_youtube]`, id)
             await pakforlay.reply(from, `_Tunggu, sedang memproses perintah_\n*Jika Bot Tidak mengirim Video. Tunggu Satu Menit, lalu jalani kembali perintah yang dikirimkan.*`, id)
             const ytmus = await rugaapi.ytmp3(args[0])
-            await pakforlay.sendFileFromUrl(from, ytmus, `Sukses mengunduh Video Youtube Menggunakan Bot WhatsApp PakForlay`, id)
+            await pakforlay.sendFileFromUrl(from, ytmus, `Sukses mengunduh MP3 Youtube Menggunakan Bot WhatsApp PakForlay`, id)
             .catch(() => {
                 pakforlay.reply(from, 'Ada yang Error!', id)
             })
