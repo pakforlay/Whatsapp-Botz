@@ -183,12 +183,12 @@ Fix Stuck on linux, install google chrome stable:
 - [dandyraka](https://github.com/dandyraka/NoBadWord)
 - [ArugaZ](https://github.com/ArugaZ/)
 
-## 18/11/2020
-
-Fix API Tiktok dan Youtube
-Fix ERROR
-Fix Typo
-
 ## 14/11/2020
 
 UPDATE TIKTOK DOWNLOADER TANPA WATERMARK
+
+## 18/11/2020
+
+Fix API Tiktok dan Youtube Downloader
+Fix ERROR
+Fix Typo
