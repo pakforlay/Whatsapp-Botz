@@ -333,7 +333,7 @@ module.exports = HandleMsg = async (pakforlay, message) => {
                         hehex += '╠➥ '
                         hehex += response.data.data[i].name.transliteration.id.toLowerCase() + '\n'
                             }
-                        hehex += '╚═〘 *A R U G A  B O T* 〙'
+                        hehex += '╚═〘 *Yaelahdo  B O T* 〙'
                     pakforlay.reply(from, hehex, id)
                 })
             } catch(err) {
@@ -913,7 +913,7 @@ module.exports = HandleMsg = async (pakforlay, message) => {
                 hehex += '╠➥'
                 hehex += ` @${groupMem[i].id.replace(/@c.us/g, '')}\n`
             }
-            hehex += '╚═〘 *A R U G A  B O T* 〙'
+            hehex += '╚═〘 *Yaelahdo  B O T* 〙'
             await pakforlay.sendTextWithMentions(from, hehex)
             break
 		case 'simisimi':
@@ -1013,8 +1013,8 @@ module.exports = HandleMsg = async (pakforlay, message) => {
             const chatz = await pakforlay.getAllChatIds()
             for (let idk of chatz) {
                 var cvk = await pakforlay.getChatById(idk)
-                if (!cvk.isReadOnly) pakforlay.sendText(idk, `〘 *A R U G A  B C* 〙\n\n${msg}`)
-                if (cvk.isReadOnly) pakforlay.sendText(idk, `〘 *A R U G A  B C* 〙\n\n${msg}`)
+                if (!cvk.isReadOnly) pakforlay.sendText(idk, `〘 *Yaelahdo  B C* 〙\n\n${msg}`)
+                if (cvk.isReadOnly) pakforlay.sendText(idk, `〘 *Yaelahdo  B C* 〙\n\n${msg}`)
             }
             pakforlay.reply(from, 'Broadcast Success!', id)
             break
