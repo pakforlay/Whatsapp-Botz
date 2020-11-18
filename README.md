@@ -14,8 +14,12 @@ THANKS BANG ARUGAZ ATAS API NYA, DALAM WAKTU SINGKAT INSHAALLAH API SAYA SENDIRI
 <p align="center"><a href="https://yaelahdo.herokuapp.com/" target="_blank">API PakForlay</a>.</p>
 </div>
 
+## 18/11/2020
+Fix API Tiktok dan Youtube
+Fix ERROR
+Fix Typo
 ## 14/11/2020
-## UPDATE TIKTOK DOWNLOADER TANPA WATERMARK
+UPDATE TIKTOK DOWNLOADER TANPA WATERMARK
 
 ## Getting Started
 
