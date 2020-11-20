@@ -46,7 +46,7 @@ const { uploadImages } = require('./utils/fetcher')
 
 const fs = require('fs-extra')
 const banned = JSON.parse(fs.readFileSync('./settings/banned.json'))
-const simi = JSON.parse(fs.readFileSync('./settings/simi.json'))
+/* const simi = JSON.parse(fs.readFileSync('./settings/simi.json')) */
 const ngegas = JSON.parse(fs.readFileSync('./settings/ngegas.json'))
 const setting = JSON.parse(fs.readFileSync('./settings/setting.json'))
 
@@ -59,7 +59,7 @@ let {
 
 const {
     apiNoBg,
-	apiSimi
+/*	apiSimi */
 } = JSON.parse(fs.readFileSync('./settings/api.json'))
 
 function formatin(duit){
@@ -107,7 +107,7 @@ module.exports = HandleMsg = async (pakforlay, message) => {
 		// [IDENTIFY]
 		const isOwnerBot = ownerNumber.includes(pengirim)
         const isBanned = banned.includes(pengirim)
-		const isSimi = simi.includes(chatId)
+	/*	const isSimi = simi.includes(chatId) */
 		const isNgegas = ngegas.includes(chatId)
 		const isKasar = await cariKasar(chats)
 
@@ -479,11 +479,13 @@ module.exports = HandleMsg = async (pakforlay, message) => {
                 pakforlay.reply(from, 'Ada yang Error!', id)
             })
             break
-	case 'tiktok':
+		case 'tiktok':
             if (args.length == 0) return pakforlay.reply(from, `Untuk mendownload video tiktok\nketik: ${prefix}tiktok [link_tik]`, id)
-	    await pakforlay.reply(from, `_Tunggu, sedang memproses perintah_\n*Jika Bot Tidak mengirim Video. Tunggu Satu Menit, lalu jalani kembali perintah yang dikirimkan.*`, id)
-            const tiktoks = await rugaapi.tiktok(args[0])
-            await pakforlay.sendFileFromUrl(from, tiktoks, ' ', ' ', id)
+			await pakforlay.reply(from, `_Tunggu, sedang memproses perintah_\n`, id)
+            const vidTiktok = await rugaapi.tiktok(args[0])
+			const infoTiktok = await rugaapi.tiktokInfo(args[0])
+			await pakforlay.sendFileFromUrl(from, vidTiktok, '', '', id)
+			await pakforlay.sendText(from, infoTiktok, '', '', id)
             .catch(() => {
                 pakforlay.reply(from, 'Ada yang Error!', id)
             })
@@ -918,7 +920,7 @@ module.exports = HandleMsg = async (pakforlay, message) => {
             hehex += '╚═〘 *Yaelahdo  B O T* 〙'
             await pakforlay.sendTextWithMentions(from, hehex)
             break
-		case 'simisimi':
+	/*	case 'simisimi':
 			if (!isGroupMsg) return pakforlay.reply(from, 'Maaf, perintah ini hanya dapat dipakai didalam grup!', id)
 			pakforlay.reply(from, `Untuk mengaktifkan simi-simi pada Group Chat\n\nPenggunaan\n${prefix}simi on --mengaktifkan\n${prefix}simi off --nonaktifkan\n`, id)
 			break
@@ -938,7 +940,7 @@ module.exports = HandleMsg = async (pakforlay, message) => {
 			} else {
 				pakforlay.reply(from, `Untuk mengaktifkan simi-simi pada Group Chat\n\nPenggunaan\n${prefix}simi on --mengaktifkan\n${prefix}simi off --nonaktifkan\n`, id)
 			}
-			break
+			break */
 		case 'katakasar':
 			if (!isGroupMsg) return pakforlay.reply(from, 'Maaf, perintah ini hanya dapat dipakai didalam grup!', id)
 			pakforlay.reply(from, `Untuk mengaktifkan Fitur Kata Kasar pada Group Chat\n\napasih itu? fitur apabila seseorang mengucapkan kata kasar akan mendapatkan denda\n\nPenggunaan\n${prefix}kasar on --mengaktifkan\n${prefix}kasar off --nonaktifkan\n\n${prefix}reset --reset jumlah denda`, id)
@@ -1042,7 +1044,7 @@ module.exports = HandleMsg = async (pakforlay, message) => {
         default:
             break
         }
-		
+		/*
 		// Simi-simi function
 		if ((!isCmd && isGroupMsg && isSimi) && message.type === 'chat') {
 			axios.get(`https://arugaz.herokuapp.com/api/simisimi?kata=${encodeURIComponent(message.body)}&apikey=${apiSimi}`)
@@ -1054,7 +1056,7 @@ module.exports = HandleMsg = async (pakforlay, message) => {
 				pakforlay.reply(from, `${err}`, id)
 			})
 		}
-		
+		*/
 		// Kata kasar function
 		if(!isCmd && isGroupMsg && isNgegas) {
             const find = db.get('group').find({ id: groupId }).value()
