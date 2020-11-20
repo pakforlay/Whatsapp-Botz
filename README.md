@@ -183,7 +183,7 @@ Fix Stuck on linux, install google chrome stable:
 - [dandyraka](https://github.com/dandyraka/NoBadWord)
 - [ArugaZ](https://github.com/ArugaZ/)
 
-## 18/11/2020
+## 121/11/2020
 
 GRAB DATA TIKTOK
 DELETE FITURE SIMSIMI
