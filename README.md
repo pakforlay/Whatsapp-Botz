@@ -183,12 +183,17 @@ Fix Stuck on linux, install google chrome stable:
 - [dandyraka](https://github.com/dandyraka/NoBadWord)
 - [ArugaZ](https://github.com/ArugaZ/)
 
-## 14/11/2020
+## 18/11/2020
 
-UPDATE TIKTOK DOWNLOADER TANPA WATERMARK
+GRAB DATA TIKTOK
+DELETE FITURE SIMSIMI BECAUSE SPAM TO OWNER.
 
 ## 18/11/2020
 
 Fix API Tiktok dan Youtube Downloader
 Fix ERROR
 Fix Typo
+
+## 14/11/2020
+
+UPDATE TIKTOK DOWNLOADER TANPA WATERMARK
