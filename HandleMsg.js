@@ -483,7 +483,7 @@ module.exports = HandleMsg = async (pakforlay, message) => {
             if (args.length == 0) return pakforlay.reply(from, `Untuk mendownload video tiktok\nketik: ${prefix}tiktok [link_tik]`, id)
 	    await pakforlay.reply(from, `_Tunggu, sedang memproses perintah_\n*Jika Bot Tidak mengirim Video. Tunggu Satu Menit, lalu jalani kembali perintah yang dikirimkan.*`, id)
             const tiktoks = await rugaapi.tiktok(args[0])
-            await pakforlay.sendFileFromUrl(from, tiktoks, `Sukses mengunduh Video Tiktok tanpa Watermark Menggunakan Bot WhatsApp PakForlay`, id)
+            await pakforlay.sendFileFromUrl(from, tiktoks, ' ', ' ', id)
             .catch(() => {
                 pakforlay.reply(from, 'Ada yang Error!', id)
             })
