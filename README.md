@@ -186,7 +186,7 @@ Fix Stuck on linux, install google chrome stable:
 ## 18/11/2020
 
 GRAB DATA TIKTOK
-DELETE FITURE SIMSIMI BECAUSE SPAM TO OWNER.
+DELETE FITURE SIMSIMI
 
 ## 18/11/2020
 
