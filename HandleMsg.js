@@ -471,6 +471,20 @@ module.exports = HandleMsg = async (pakforlay, message) => {
             })
             break
         //Media
+	case 'twimg':
+            if (args.length == 0) return pakforlay.reply(from, `Untuk mendownload gambar atau video dari instagram\nketik: ${prefix}insta [link_ig]`, id)
+            const twimg = await rugaapi.twitimg(args[0])
+            await pakforlay.sendFileFromUrl(from, twimg, 'Sukses mengunduh Foto Twitter Menggunakan Bot WhatsApp PakForlay', '', id)
+            .catch(() => {
+                pakforlay.reply(from, 'Ada yang Error!', id)
+            })
+        case 'twvid':
+            if (args.length == 0) return pakforlay.reply(from, `Untuk mendownload gambar atau video dari instagram\nketik: ${prefix}insta [link_ig]`, id)
+            const twvid = await rugaapi.twitvid(args[0])
+            await pakforlay.sendFileFromUrl(from, twvid, 'Sukses mengunduh Video Twitter Menggunakan Bot WhatsApp PakForlay', '', id)
+            .catch(() => {
+                pakforlay.reply(from, 'Ada yang Error!', id)
+            })
         case 'insta':
             if (args.length == 0) return pakforlay.reply(from, `Untuk mendownload gambar atau video dari instagram\nketik: ${prefix}insta [link_ig]`, id)
             const instag = await rugaapi.insta(args[0])
@@ -499,9 +513,9 @@ module.exports = HandleMsg = async (pakforlay, message) => {
                 pakforlay.reply(from, 'Ada yang Error!', id)
             })
             break
-		case 'ytvid':
+	case 'ytvid':
             if (args.length == 0) return pakforlay.reply(from, `Untuk mendownload video youtube\nketik: ${prefix}ytvid [link_youtube]`, id)
-			await pakforlay.reply(from, `_Tunggu, sedang memproses perintah_\n*Jika Bot Tidak mengirim Video. Tunggu Satu Menit, lalu jalani kembali perintah yang dikirimkan.*`, id)
+	    await pakforlay.reply(from, `_Tunggu, sedang memproses perintah_\n*Jika Bot Tidak mengirim Video. Tunggu Satu Menit, lalu jalani kembali perintah yang dikirimkan.*`, id)
             const youtube = await rugaapi.ytvid(args[0])
             await pakforlay.sendFileFromUrl(from, youtube, `Sukses mengunduh Video Youtube Menggunakan Bot WhatsApp PakForlay`, id)
             .catch(() => {
